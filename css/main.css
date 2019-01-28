@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.banner{
+    position: relative;
+}
+/* 
+===The Svg files used===
+*/
+.top-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: -50px
+}
+.ellipse{
+    position: absolute;
+    top: 80vh;
+    left: 0;
+    margin-left: -50px
+}
+.leftcorner{
+    position: absolute;
+    top: 100vh;
+    left: 20%;
+    height: 400px;
+}
+.rightcorner{
+    position: absolute;
+    top: 100vh;
+    right: 10%;
+    height: 250px;
+}
+.lightpink{
+    position: absolute;
+    top: 190vh;
+    left: 0;
+    margin-left: 50px
+}
+.bottom{
+    position: absolute;
+    top: 250vh;
+    left: 0;
+    margin-left: -120px;
+    height: 600px;
+}
+/*
+ ===The end of svg files===
+*/
+/* 
+===The Header Section for Mobile Devices
+*/
+.navigation{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: 99;
+    text-align: center;
+}
+.navigation ul{
+    margin-top: 130px
+}
+
+.navigation li{
+    padding: 10px 20px;
+}
+.navigation li a{
+    color: black
+}
+.navigation .signup{
+    padding: 10px 20px;
+    background: #E53167;
+    border-radius: 40px;
+}
+.navigation .signup a{
+    color: white
+}
+/* 
+===The End of Header Section for Mobile Device
+*/
+/* 
+===The Header Section for Deskstop===
+*/
+.header{
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    padding: 10px 100px;
+}
+.header a.logo{
+    color: #3480E3;
+    font-size: 15px;
+    float: left;
+    font-weight: bolder;
+    margin:0px 20px
+}
+
+.header ul{
+    float: right;
+}
+.header ul li{
+    display: inline;
+    padding: 5px 20px;
+}
+.header ul li a{
+    color: #707070;
+    font-size: 12px;
+}
+.header .login{
+    padding: 5px 30px;
+}
+.header .signup{
+    padding: 10px 30px;
+    background: #E53167;
+    border-radius: 40px;
+}
+.header .signup a{
+    color: white;
+}
+/* 
+===The End of Header Section for Desktop===
+*/
+.container{
+    width: 70%
+}
+.banner .container{
+    clear: both;
+    margin-top: 30vh;
+    margin-bottom: 16vh;
+    z-index: 99;
+}
+
+p{
+   color:  #657783
+}
+.btn{
+    padding: 10px 30px;
+    background: #E53167;
+    border-radius: 40px;
+    color: white;
+    font-size: 12px
+}
+.business{
+    position: relative;
+    top: -100px
+}
+.theplan{
+    width: 55%;
+    margin:10vh auto 15vh;
+    z-index: 99;
+}
+.theplan a{
+    font-size: 12px;
+    color: #E53167
+}
+.marketing{
+    margin-bottom: 15vh
+}
+.footer h5{
+    font-weight: bolder;
+    font-size: 15px
+}
+
+/* 
+===Media Queries
+*/
+@media only screen and (max-width:750px){
+    .container{
+        width: 100%;
+    }
+    .banner .container{
+        margin-top: 15vh
+    }
+    .theplan{
+        width: 100%;
+    }
+    .card{
+        margin: 0;
+        padding: 0
+    }
+    .header
+    {
+        padding: 10px
+    }
+}
